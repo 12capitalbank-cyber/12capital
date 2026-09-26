@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>12 Capital Inc. — Institutional Business Plan & Compliance Dossier</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0F2A4A;
+  --dark: #0A192F;
+  --slate: #475569;
+  --light: #F8FAFC;
+  --border: #E2E8F0;
+  --gold: #9A7B2F;
+  --gold-bg: #FAF5E8;
+  --green: #0D7A53;
+  --green-bg: #EDFDF5;
+  --blue-bg: #EFF6FF;
+  --blue-border: #BFDBFE;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #1E293B;
+  background: #F1F5F9;
+  line-height: 1.7;
+  font-size: 14.5px;
+  padding: 40px 20px;
+}
+.page-container {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.cover-header {
+  background: linear-gradient(135deg, var(--dark) 0%, var(--navy) 100%);
+  color: #FFFFFF;
+  padding: 60px 50px;
+  border-bottom: 4px solid var(--gold);
+}
+.cover-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #E2B96F;
+  margin-bottom: 12px;
+}
+.cover-title {
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+.cover-subtitle {
+  font-size: 16px;
+  color: #94A3B8;
+  max-width: 760px;
+  font-weight: 400;
+}
+.meta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  padding: 30px 50px;
+  background: #F8FAFC;
+  border-bottom: 1px solid var(--border);
+}
+.meta-item { font-size: 12.5px; }
+.meta-label { color: var(--slate); font-weight: 600; text-transform: uppercase; font-size: 10.5px; letter-spacing: 0.05em; margin-bottom: 4px; }
+.meta-value { color: var(--dark); font-weight: 700; }
+
+.content-body { padding: 50px; }
+h2 {
+  font-size: 22px;
+  color: var(--navy);
+  font-weight: 800;
+  margin-top: 40px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #E2E8F0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+h2:first-of-type { margin-top: 0; }
+h3 {
+  font-size: 16px;
+  color: var(--dark);
+  font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 10px;
+}
+p { margin-bottom: 16px; color: #334155; }
+ul, ol { margin-left: 20px; margin-bottom: 20px; color: #334155; }
+li { margin-bottom: 8px; }
+
+.callout {
+  background: var(--blue-bg);
+  border-left: 4px solid #2563EB;
+  padding: 20px 24px;
+  border-radius: 0 8px 8px 0;
+  margin: 24px 0;
+}
+.callout-title {
+  font-weight: 800;
+  color: #1E3A8A;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+.callout-text { font-size: 13.5px; color: #1E293B; line-height: 1.6; }
+
+.table-wrapper {
+  overflow-x: auto;
+  margin: 24px 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  text-align: left;
+}
+th {
+  background: var(--navy);
+  color: #FFFFFF;
+  padding: 12px 16px;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+  color: #334155;
+}
+tr:nth-child(even) td { background: #F8FAFC; }
+tr:last-child td { border-bottom: none; }
+.highlight-row td { background: #F1F5F9; font-weight: 700; color: var(--navy); }
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+}
+.badge-green { background: var(--green-bg); color: var(--green); border: 1px solid #A7F3D0; }
+.badge-gold { background: var(--gold-bg); color: var(--gold); border: 1px solid #FDE68A; }
+
+.sign-box {
+  margin-top: 50px;
+  padding: 30px;
+  background: #F8FAFC;
+  border: 1px dashed #CBD5E1;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+@media print {
+  body { background: #FFF; padding: 0; font-size: 12px; }
+  .page-container { box-shadow: none; border: none; }
+  .cover-header { padding: 40px; }
+  .content-body { padding: 30px; }
+  h2 { page-break-before: auto; }
+}
+</style>
+</head>
+<body>
+
+<div class="page-container">
+  <div class="cover-header">
+    <div class="cover-tag">12 GROUP HOLDING • STRICTLY CONFIDENTIAL</div>
+    <div class="cover-title">12 CAPITAL INC.</div>
+    <div class="cover-subtitle">Institutional Business Plan & Compliance Onboarding Dossier — Prepared for Corporate Banking & Risk Committee Review</div>
+  </div>
+
+  <div class="meta-grid">
+    <div class="meta-item">
+      <div class="meta-label">Jurisdiction</div>
+      <div class="meta-value">Saint Lucia (IBC Act, Cap. 12.14)</div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-label">Execution Architecture</div>
+      <div class="meta-value">100% STP / Non-Dealing Desk</div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-label">Core Partners</div>
+      <div class="meta-value">Luramic (LP) • Kenmore (CRM)</div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-label">Document Date</div>
+      <div class="meta-value">September 26, 2026</div>
+    </div>
+  </div>
+
+  <div class="content-body">
+    <h2>1. Executive Summary & Corporate Purpose</h2>
+    <p><strong>12 Capital Inc.</strong> ("12 Capital" or the "Company") is an internationally structured multi-asset brokerage and financial technology firm incorporated as an International Business Company (IBC) in Saint Lucia. Operating as the flagship financial arm of <strong>12 Group Holding</strong> (which includes operational renewable solar assets under <strong>Detronic Energia</strong> and financial technology systems under <strong>FactorHub / FactorOne</strong>), the Company provides eligible international retail, professional, and corporate clients with institutional access to Foreign Exchange (FX), CFDs on Precious Metals, Commodities, Global Indices, and Cross-Border Wealth Solutions.</p>
+    <p>Crucially, <strong>12 Capital is already an active, operational brokerage</strong> with live trading accounts, real transaction volume, and operational infrastructure. Operating exclusively on a <strong>Straight-Through Processing (STP) / Direct Market Access (DMA)</strong> model, 12 Capital does not hold speculative market risk or trade against its clients. Orders are routed directly to institutional liquidity providers, spearheaded by <strong>Luramic</strong>, while client relationship management and compliance verification are powered by <strong>Kenmore Design</strong>.</p>
+    <p>The Company's live web platform is deployed and publicly accessible for regulatory inspection at <strong><a href="https://12capital.vercel.app" style="color:#2563EB;">https://12capital.vercel.app</a></strong>.</p>
+
+    <div class="callout">
+      <div class="callout-title">Exclusive Purpose of the Corporate Bank Account</div>
+      <div class="callout-text">
+        The requested corporate operational account will be held strictly separate from client depositories and used solely for:
+        <br>• Initial Shareholder Capitalization & Equity Contributions from 12 Group Holding and verified UBOs.
+        <br>• Corporate Operating Expenses (OPEX): Technology licensing (Kenmore Design), liquidity clearing (Luramic), cloud servers (Vercel/Supabase), legal retainers, and executive salaries.
+        <br>• Institutional Liquidity Margin: Buffer collateral transferred to Luramic clearing accounts.
+        <br>• Corporate Retained Earnings & Lawful Dividend Distributions.
+      </div>
+    </div>
+
+    <h2>2. Corporate Structure & Dual-Track Governance</h2>
+    <p>12 Capital Inc. is incorporated under the <em>International Business Companies Act, Cap. 12.14</em> of Saint Lucia, supported by a formal Caribbean Legal Letter of Opinion confirming capacity, good standing, and legality of cross-border financial facilitation services. 12 Group operates a clear <strong>Dual-Track Regulatory Architecture</strong>:</p>
+    <ul>
+      <li><strong>Offshore Track (12 Capital Inc. - Saint Lucia):</strong> Global currency markets and multi-asset execution for non-resident clients under international common law.</li>
+      <li><strong>Domestic Track (FactorOne / FactorHub - Brazil):</strong> Separate domestic Brazilian banking-as-a-service (BaaS) and technology operations preparing for Central Bank (BACEN) licensing.</li>
+    </ul>
+    <p>Under 12 Group Holding bylaws, 12 Capital operates as an independent ring-fenced entity with zero commingling of customer balances or external group liabilities:</p>
+    <ul>
+      <li><strong>Cláudio (Chief Executive Officer & Board Director):</strong> Directs corporate strategy, institutional banking relations, commercial alliances, and executive leadership.</li>
+      <li><strong>André (Founding Partner & Board Director):</strong> Oversees group capital allocation, corporate governance, and fiduciary oversight.</li>
+      <li><strong>Fayson Santos (Head of Technology & Broker Operations):</strong> Leads technical architecture, trading bridges, Kenmore Design CRM integrations, and operational compliance.</li>
+    </ul>
+
+    <h2>3. Multi-Asset Portfolio & Products</h2>
+    <p>To establish institutional credibility, 12 Capital combines active market execution with conservative wealth dollarization and corporate analytics tools:</p>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Asset Class</th>
+            <th>Instruments Offered</th>
+            <th>Execution Model</th>
+            <th>Primary Partner</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Foreign Exchange (FX)</strong></td>
+            <td>55+ Major, Minor & Exotic Currency Pairs</td>
+            <td><span class="badge badge-green">STP / DMA</span></td>
+            <td>Luramic Institutional</td>
+          </tr>
+          <tr>
+            <td><strong>Precious Metals</strong></td>
+            <td>Gold (XAU/USD), Silver (XAG/USD), Platinum</td>
+            <td><span class="badge badge-green">STP / DMA</span></td>
+            <td>Luramic Institutional</td>
+          </tr>
+          <tr>
+            <td><strong>Commodities & Energy</strong></td>
+            <td>WTI Crude Oil, Brent, Natural Gas</td>
+            <td><span class="badge badge-green">STP / Cash CFD</span></td>
+            <td>Luramic Institutional</td>
+          </tr>
+          <tr>
+            <td><strong>Global Indices</strong></td>
+            <td>US30, SPX500, NAS100, GER40, UK100</td>
+            <td><span class="badge badge-green">Direct STP Routing</span></td>
+            <td>Luramic Institutional</td>
+          </tr>
+          <tr>
+            <td><strong>Equities & ETFs</strong></td>
+            <td>US Blue Chips, S&P 500 ETFs, Thematic Funds</td>
+            <td><span class="badge badge-gold">Custody Rail</span></td>
+            <td>Sub-Broker / Custody</td>
+          </tr>
+          <tr>
+            <td><strong>Wealth & Advisory</strong></td>
+            <td>Offshore Structuring, Capital Dollarization</td>
+            <td><span class="badge badge-gold">Fee-for-Service</span></td>
+            <td>12 Capital Fiduciary Network</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>4. Technology Stack & Operational Partners</h2>
+    <p>• <strong>Luramic:</strong> Institutional counterparty providing multi-bank liquidity aggregation, raw ECN pricing, and daily automated reconciliation statements.<br>
+    • <strong>Kenmore Design:</strong> Core broker CRM, secure Client Cabinet (Trader's Room), KYC document capture, and multi-gateway PSP orchestration hub.<br>
+    • <strong>Next.js 16, Supabase & Vercel Edge:</strong> Cloud infrastructure deployed across SOC 2 Type II certified datacenters, with AES-256 data-at-rest encryption, TLS 1.3, and mandatory 2FA.</p>
+
+    <h2>5. Compliance, AML/CFT & KYC Framework</h2>
+    <p>The Company enforces a rigorous AML/CFT framework structured around FATF 40 Recommendations:</p>
+    <ul>
+      <li><strong>Tiered Onboarding:</strong> Tier 1 (Passport/ID + 3D facial liveness biometrics); Tier 2 (Proof of address < 90 days); Tier 3 (Source of Wealth/Funds for accounts > $50,000).</li>
+      <li><strong>Sanctions & PEP Screening:</strong> Automated screening against OFAC, UN, EU, UK sanctions lists, and global Politically Exposed Persons (PEP) registers.</li>
+      <li><strong>Strict First-Party Rule:</strong> Deposits and withdrawals must match the client's verified legal name exactly. Third-party transfers and anonymous instruments are blocked.</li>
+      <li><strong>Geographic Exclusions:</strong> Zero onboarding of US Persons (CFTC/SEC compliance), FATF Blacklist/Greylist nations, or domestic Saint Lucia residents.</li>
+    </ul>
+
+    <h2>6. Three-Year Financial Forecast & Solvency Analysis</h2>
+    <p>Financial projections reflect a conservative baseline starting at <strong>USD 5,000,000 monthly volume</strong> in Year 1, expanding 100% YoY to <strong>USD 10,000,000/month</strong> in Year 2 and <strong>USD 20,000,000/month</strong> in Year 3:</p>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Financial Metric (USD)</th>
+            <th>Year 1 (Baseline)</th>
+            <th>Year 2 (+100%)</th>
+            <th>Year 3 (+100%)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Active Trading Accounts</td>
+            <td>250</td>
+            <td>650</td>
+            <td>1,500</td>
+          </tr>
+          <tr>
+            <td>Monthly Average Volume</td>
+            <td>$5,000,000</td>
+            <td>$10,000,000</td>
+            <td>$20,000,000</td>
+          </tr>
+          <tr>
+            <td>Annual Gross Volume</td>
+            <td>$60,000,000</td>
+            <td>$120,000,000</td>
+            <td>$240,000,000</td>
+          </tr>
+          <tr>
+            <td>Gross Brokerage Revenues (Spreads/Comm.)</td>
+            <td>$84,000</td>
+            <td>$168,000</td>
+            <td>$336,000</td>
+          </tr>
+          <tr>
+            <td>Auxiliary Wealth & Advisory Fees</td>
+            <td>$101,000</td>
+            <td>$233,000</td>
+            <td>$515,000</td>
+          </tr>
+          <tr class="highlight-row">
+            <td>TOTAL GROSS REVENUES</td>
+            <td>$185,000</td>
+            <td>$401,000</td>
+            <td>$851,000</td>
+          </tr>
+          <tr>
+            <td>Direct Clearing Costs (Luramic/PSP)</td>
+            <td>($36,000)</td>
+            <td>($67,000)</td>
+            <td>($130,000)</td>
+          </tr>
+          <tr>
+            <td>Operating Expenses (OPEX)</td>
+            <td>($131,100)</td>
+            <td>($224,900)</td>
+            <td>($377,000)</td>
+          </tr>
+          <tr class="highlight-row">
+            <td>NET OPERATING PROFIT (EBITDA)</td>
+            <td>$17,900</td>
+            <td>$109,100</td>
+            <td>$344,000</td>
+          </tr>
+          <tr>
+            <td><strong>Retained Solvency Buffer (Cumulative)</strong></td>
+            <td><strong>$15,400</strong></td>
+            <td><strong>$120,000</strong></td>
+            <td><strong>$455,500</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="sign-box">
+      <div>
+        <p style="font-weight:700; color:var(--navy); margin-bottom:4px;">12 CAPITAL INC. — EXECUTIVE ATTESTATION</p>
+        <p style="font-size:12px; color:var(--slate); margin-bottom:0;">Submitted to Banking Compliance & Risk Committee</p>
+      </div>
+      <div style="text-align:right;">
+        <p style="font-weight:800; color:var(--dark); margin-bottom:2px;">Fayson Santos</p>
+        <p style="font-size:12px; color:var(--slate); margin-bottom:0;">Managing Director & Authorized Signatory</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
