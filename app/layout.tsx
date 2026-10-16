@@ -1,21 +1,21 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Hanken_Grotesk, Newsreader } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const hanken = Hanken_Grotesk({
+  variable: "--font-hanken",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const newsreader = Newsreader({
+  variable: "--font-newsreader",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "12 Capital — Global Multi-Asset Prime & Wealth Infrastructure",
+  title: "12 Capital — Website under construction",
   description:
-    "Institutional multi-asset brokerage, Straight-Through Processing (STP), and financial intelligence for global traders, family offices, and wealth clients. Domiciled in Saint Lucia (IBC).",
+    "12 Capital Limited, Saint Lucia IBC. Our website is under construction.",
 };
 
 export default function RootLayout({
@@ -24,11 +24,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col bg-[#070D18] text-slate-100 font-sans selection:bg-amber-500/20 selection:text-amber-300">
+    <html lang="en" className={`${hanken.variable} ${newsreader.variable}`}>
+      <body className="min-h-screen bg-cream text-ink antialiased">
         {children}
       </body>
     </html>
