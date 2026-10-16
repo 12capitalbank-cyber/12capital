@@ -1,19 +1,14 @@
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-[#070D18] text-slate-100 antialiased selection:bg-amber-500/20 selection:text-amber-300">
-      {/* ─── COMPLIANCE & OPERATIONAL BANNER ─── */}
-      <div className="bg-[#0B1528] border-b border-slate-800 text-xs py-2.5 px-4 text-center text-slate-400">
-        <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-x-6 gap-y-1">
-          <span className="inline-flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            <strong className="text-slate-200">Operação Ativa:</strong> Corretora internacional com execução 100% STP / Non-Dealing Desk.
-          </span>
-          <span className="hidden sm:inline text-slate-600">|</span>
-          <span>Provedor de Liquidez: <strong className="text-slate-300 font-mono">Luramic</strong></span>
-          <span className="hidden sm:inline text-slate-600">|</span>
-          <span>Plataforma & CRM: <strong className="text-slate-300 font-mono">Kenmore Design</strong></span>
-          <span className="hidden sm:inline text-slate-600">|</span>
-          <span className="text-amber-400 font-semibold">12 Group Holding</span>
+      {/* ─── UNDER CONSTRUCTION BANNER ─── */}
+      <div role="status" className="bg-amber-500 text-slate-950 text-xs sm:text-sm py-2.5 px-4 text-center">
+        <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
+          <strong className="uppercase tracking-widest">Website under construction</strong>
+          <span className="hidden sm:inline">|</span>
+          <span>Content is being prepared and does not constitute an offer of services.</span>
+          <span className="hidden md:inline">|</span>
+          <span className="hidden md:inline">12 Capital Limited · Saint Lucia IBC · Reg. No. 2026-00606</span>
         </div>
       </div>
 
